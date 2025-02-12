@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -19,7 +18,7 @@ class Agent extends Model
         'license_number',
         'image',
         'status',
-        'manager_id'
+        'manager_id',
     ];
 
     public function manager()

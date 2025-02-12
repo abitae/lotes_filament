@@ -16,7 +16,7 @@ class PropertyFactory extends Factory
             'state' => $this->faker->state,
             'zip_code' => $this->faker->postcode,
             'price' => $this->faker->randomFloat(2, 100000, 1000000),
-            'property_type' => $this->faker->word,
+            'property_type' => $this->faker->randomElement(['House', 'Apartment', 'Land']),
             'bedrooms' => $this->faker->numberBetween(1, 10),
             'bathrooms' => $this->faker->numberBetween(1, 10),
             'square_feet' => $this->faker->numberBetween(500, 10000),

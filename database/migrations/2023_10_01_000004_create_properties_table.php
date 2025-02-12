@@ -9,6 +9,7 @@ class CreatePropertiesTable extends Migration
     {
         Schema::create('properties', function (Blueprint $table) {
             $table->id();
+            $table->string('code');
             $table->string('address');
             $table->string('city');
             $table->string('state');
